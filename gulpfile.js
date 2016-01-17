@@ -33,7 +33,7 @@ gulp.task('less', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/**/*.less', ['default']); //当所有less文件发生改变时，调用testLess任务
+    //gulp.watch('src/**/*.less', ['default']); //当所有less文件发生改变时，调用testLess任务
     gulp.watch('test/**/*.js', ['default']);
 });
 gulp.task('minifyjs', function () {
@@ -44,4 +44,5 @@ gulp.task('minifyjs', function () {
         .pipe(uglify())    //压缩
         .pipe(gulp.dest('minified/js'));  //输出
 });
-gulp.task('default', ['less', 'watch', 'minifyjs','mocha']);
+//gulp.task('default', ['less', 'watch', 'minifyjs','mocha']);
+gulp.task('default', ['watch','mocha']);
