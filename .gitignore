@@ -49,12 +49,11 @@ hs_err_pid*
 /.idea
 /out
 /build
-/node_modules
 /test
-test1/*
-test2/
-/react-weui
-react-weui/
+test1
+test2
+react-weui
 codeshop
 express
 weixincode
+redux
